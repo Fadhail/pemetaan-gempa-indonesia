@@ -76,11 +76,17 @@ export const MapContainer: React.FC = () => {
     // Add markers for each earthquake
     earthquakes.forEach((earthquake) => {
       if (earthquake.lintang && earthquake.bujur) {
-        const latStr = earthquake.lintang.replace(/\s[LS]/i, '');
-        const lngStr = earthquake.bujur.replace(/\s[BT]/i, '');
-        
-        const lat = parseFloat(latStr);
-        const lng = parseFloat(lngStr);
+        const latStr = earthquake.lintang.replace(/\s[LS]/i, "");
+        const lngStr = earthquake.bujur.replace(/\s[BT]/i, "");
+
+        let lat = parseFloat(earthquake.lintang);
+        if (/[Ss]$/.test(earthquake.lintang)) {
+          lat = -Math.abs(lat);
+        }
+        let lng = parseFloat(earthquake.bujur);
+        if (/[Bb]$/.test(earthquake.bujur)) {
+          lng = -Math.abs(lng);
+        }
 
         if (!isNaN(lat) && !isNaN(lng)) {
           const magnitude = earthquake.magnitude
