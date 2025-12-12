@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 330" width="300" height="300">
+  <!-- Outer pin -->
+  <path
+    d="
+      M150 10
+      C205 10 250 55 250 110
+      C250 200 175 290 150 320
+      C125 290 50 200 50 110
+      C50 55 95 10 150 10
+      Z"
+    fill="yellow"
+    stroke="black"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Middle circle -->
+  <circle
+    cx="150"
+    cy="110"
+    r="70"
+    fill="yellow"
+    stroke="black"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner circle -->
+  <circle
+    cx="150"
+    cy="110"
+    r="50"
+    fill="none"
+    stroke="black"
+    stroke-width="10"
+  />
+
+  <!-- Waveform -->
+  <path
+    d="
+      M100 110
+      L120 110
+      L135 80
+      L150 145
+      L165 75
+      L180 120
+      L200 110"
+    fill="none"
+    stroke="black"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
