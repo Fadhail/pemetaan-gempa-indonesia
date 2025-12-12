@@ -24,7 +24,8 @@ export default function Home() {
             Aplikasi ini menampilkan data gempa bumi terkini dari BMKG (Badan Meteorologi, 
             Klimatologi, dan Geofisika) secara real-time pada peta interaktif.
           </p>
-          <p style={{ marginTop: '15px', fontSize: '12px', color: '#999' }}>
+          <p className='py-4'>Sumber Data: <a className='text-blue-600 underline' href="https://data.bmkg.go.id/gempabumi/">BMKG</a></p>
+          <p style={{ marginTop: '15px', fontSize: '15px', color: '#999' }}>
             Aplikasi ini dibuat untuk memenuhi mata kuliah Sistem Informasi Geografis.
           </p>
         </div>
